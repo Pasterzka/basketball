@@ -29,12 +29,18 @@ public class App
         // Pętla aplikacji
         while(app) {
             appMenu();
-            String geString = appGetOption(scanner);
-            appOption(geString, scanner);
+            String getString = appGetOption(scanner);
+            appOption(getString, scanner);
         }
 
 
     }
+
+    private static void appOption(String geString, Scanner scanner) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'appOption'");
+    }
+
 
     public static void appMenu(){
         System.out.println("Aplikacja działa. Wprowadź komendę lub zakończ aplikację.");
@@ -44,7 +50,9 @@ public class App
         System.out.println("4. Zakończ aplikację");
     }
 
-    public static String appGetOption(Scanner scanner) {
+    public static String appGetOption(String geString, Scanner scanner) {
+        if ()
+
         return scanner.nextLine();
     }
 
