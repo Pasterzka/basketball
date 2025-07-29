@@ -15,3 +15,30 @@ buildNumber.properties
 .project
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+
+# Ignoruj pliki IDE (VS Code)
+.vscode/
+*.swp
+*.swo
+.idea/
+*.iml
+
+# Ignoruj pliki systemowe
+.DS_Store
+Thumbs.db
+
+# Ignoruj pliki logów i tymczasowe
+*.log
+*.tmp
+*.bak
+
+# Ignoruj katalogi i pliki środowiska uruchomieniowego
+bin/
+out/
+dist/
+
+# Ignoruj ustawienia środowiska developerskiego
+.env
+.classpath
+.factorypath
