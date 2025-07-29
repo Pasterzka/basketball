@@ -1,7 +1,5 @@
 package com.basketball.entity;
 
-import java.io.Console;
-
 public class Match {
     private Team homeTeam;
     private Team awayTeam;
