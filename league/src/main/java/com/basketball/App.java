@@ -29,16 +29,25 @@ public class App
         // Pętla aplikacji
         while(app) {
             appMenu();
-            String getString = appGetOption(scanner);
-            appOption(getString, scanner);
+            String geString = appGetOption(scanner);
+            appOption(geString, scanner);
         }
 
 
     }
 
     private static void appOption(String geString, Scanner scanner) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'appOption'");
+        if (geString.equals("create_league")) {
+            System.out.println("Tworzenie nowej ligi...");
+        } else if (geString.equals("add_team")) {
+            System.out.println("Dodawanie drużyny do ligi...");
+        } else if (geString.equals("start_match")) {
+            System.out.println("Rozpoczynanie meczu...");
+        } else if (geString.equals("exit")) {
+            System.out.println("Zamykanie aplikacji...");
+        } else {
+            System.out.println("Nieznana komenda.");
+        }
     }
 
 
@@ -50,9 +59,7 @@ public class App
         System.out.println("4. Zakończ aplikację");
     }
 
-    public static String appGetOption(String geString, Scanner scanner) {
-        if ()
-
+    public static String appGetOption(Scanner scanner) {
         return scanner.nextLine();
     }
 
